@@ -1,6 +1,6 @@
-module github.com/hoppscotch/proxyscotch
+module proxyscotch
 
-go 1.18
+go 1.23.6
 
 require (
 	github.com/atotto/clipboard v0.1.4
@@ -8,6 +8,7 @@ require (
 	github.com/gen2brain/dlgs v0.0.0-20211108104213-bade24837f0b
 	github.com/getlantern/systray v1.2.2
 	github.com/google/uuid v1.4.0
+	github.com/hoppscotch/proxyscotch v0.1.4
 	github.com/martinlindhe/inputbox v0.0.0-20210326232244-b26136a79ad0
 	github.com/mccutchen/go-httpbin/v2 v2.12.0
 	github.com/pkg/browser v0.0.0-20210911075715-681adbf594b8
