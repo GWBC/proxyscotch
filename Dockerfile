@@ -1,10 +1,9 @@
-FROM golang:1.23.7-alpine3.21 AS builder
+FROM golang:1.24.3-alpine AS builder
 
 WORKDIR /etc/proxyscotch
 
 COPY . /etc/proxyscotch
-RUN ./build.sh linux server
-
+RUN chmod +x /app/build.sh && ./build.sh linux server
 
 
 # The actual final container
