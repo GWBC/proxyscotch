@@ -3,7 +3,7 @@ FROM golang:1.24.3-alpine AS builder
 WORKDIR /etc/proxyscotch
 
 COPY . /etc/proxyscotch
-RUN chmod +x /app/build.sh && ./build.sh linux server
+RUN chmod +x ./build.sh && ./build.sh linux server
 
 
 # The actual final container
