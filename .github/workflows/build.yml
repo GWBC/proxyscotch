@@ -27,5 +27,5 @@ jobs:
       - name: Build and push
         working-directory: .
         run: |
-          docker buildx build --platform linux/amd64 -t gwbc/proxyscotch:amd64 -f dockerfile . --push   
-          docker buildx build --platform linux/arm64 -t gwbc/proxyscotch:arm64 -f dockerfile . --push
+          docker buildx build --platform linux/amd64 -t gwbc/proxyscotch:amd64 -f Dockerfile . --push   
+          docker buildx build --platform linux/arm64 -t gwbc/proxyscotch:arm64 -f Dockerfile . --push
